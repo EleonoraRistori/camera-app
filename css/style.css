@@ -24,8 +24,10 @@ h3{
     z-index: -1;
 }
 
-#camera--trigger{
-    width: 200px;
+
+
+#detail0, #detail1, #detail2, #detail3{
+    display: none;
     background-color: transparent;
     color: white;
     font-size: 16px;
@@ -38,7 +40,8 @@ h3{
     left: calc(50% - 100px);
 }
 
-#camera--trigger img{
+
+#detail0 img, #detail1 img, #detail2 img, #detail3 img{
     position: absolute;
     top: -5px;
     right:-10px;
