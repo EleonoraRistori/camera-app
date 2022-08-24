@@ -9,5 +9,5 @@ function placeButton() {
     d.style.width = Math.floor(Math.random() * (200))+'px';
     d.style.height = Math.floor(Math.random() * (200))+'px';
 }
-const interval = setInterval(placeButton(), 500);
+const interval = setInterval(placeButton, 500);
 
