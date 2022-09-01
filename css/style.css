@@ -115,7 +115,7 @@ h3{
     position: fixed;
     height: 20px;
     width: 310px;
-    left: calc(50% - 155px);
+    left: calc(50% - 170px);
     bottom: 3px;
     z-index: 1;
     margin: 5px;
@@ -124,12 +124,14 @@ h3{
     border-radius: 10px;
 }
 
-
-
-@media screen and (orientation: landscape) and (max-width: 950px ){
-    h3 {
-        transform: rotate(270deg);
-        left:calc(-50% + 10px);
-
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+     h3 {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
     }
 }
