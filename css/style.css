@@ -107,6 +107,7 @@ h3{
     top: 20%;
     height: 60%;
     width: 20px;
+    z-index: 2;
 }
 
 .info {
