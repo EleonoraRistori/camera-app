@@ -18,6 +18,7 @@ function cameraStart() {
             // Check whether zoom is supported or not.
             if (!('zoom' in settings)) {
                 input.style.display = "None";
+                return;
             }
 
             // Map zoom to a slider element.
@@ -25,6 +26,7 @@ function cameraStart() {
             input.max = capabilities.zoom.max;
             input.step = capabilities.zoom.step;
             input.value = settings.zoom;
+
             input.oninput = function(event) {
                 track.applyConstraints({advanced: [ {zoom: event.target.value} ]});
             }
