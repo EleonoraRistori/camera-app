@@ -62,7 +62,7 @@ img {vertical-align: middle;}
     border-radius: 5px;
     width: 300px;
     padding: 15px;
-    margin: auto;
+    margin: 20px auto 30px auto;
     display: block;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
 }
@@ -87,7 +87,7 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 950px) {
     .slideshow-container{
-        height: 250px;
+        min-height: 200px;
         overflow: hidden;
     }
     .mySlides img{
