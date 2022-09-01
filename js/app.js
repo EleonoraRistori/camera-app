@@ -17,7 +17,7 @@ function cameraStart() {
 
             // Check whether zoom is supported or not.
             if (!('zoom' in settings)) {
-                //input.style.display = "None";
+                input.style.display = "None";
                 return;
             }
 
